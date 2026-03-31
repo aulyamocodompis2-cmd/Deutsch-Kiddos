@@ -1,66 +1,154 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Belajar Bahasa Jerman</title>
-  <style>
-    body {
-      font-family: Arial;
-      background: #f4f6f9;
-      text-align: center;
-    }
-    h1 {
-      color: #333;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      margin: 20px auto;
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    button {
-      padding: 10px 15px;
-      margin: 5px;
-      border: none;
-      border-radius: 5px;
-      background: #007bff;
-      color: white;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-
-<h1>🇩🇪 Belajar Vocabulary Jerman</h1>
-
-<div class="card">
-  <h2 id="word">Klik mulai</h2>
-  <p id="translation"></p>
-  <p id="example"></p>
-</div>
-
-<button onclick="nextWord()">Next</button>
-
-<script>
-const data = [
-  {word:"der Mann", translation:"laki-laki", example:"Der Mann ist freundlich."},
-  {word:"die Frau", translation:"perempuan", example:"Die Frau arbeitet im Büro."},
-  {word:"das Kind", translation:"anak", example:"Das Kind spielt im Garten."},
-  {word:"der Beruf", translation:"pekerjaan", example:"Mein Beruf ist Lehrer."},
-  {word:"die Reise", translation:"perjalanan", example:"Die Reise war sehr schön."},
-  {word:"die Erfahrung", translation:"pengalaman", example:"Ich habe viel Erfahrung."},
-  {word:"die Zukunft", translation:"masa depan", example:"Die Zukunft ist unklar."}
-];
-
-function nextWord(){
-  const random = data[Math.floor(Math.random() * data.length)];
-  document.getElementById("word").innerText = random.word;
-  document.getElementById("translation").innerText = random.translation;
-  document.getElementById("example").innerText = random.example;
-}
-</script>
-
-</body>
-</html>
+[
+  {
+    "word": "der Mann",
+    "translation": "laki-laki",
+    "example": "Der Mann ist freundlich."
+  },
+  {
+    "word": "die Frau",
+    "translation": "perempuan",
+    "example": "Die Frau arbeitet im Büro."
+  },
+  {
+    "word": "das Kind",
+    "translation": "anak",
+    "example": "Das Kind spielt im Garten."
+  },
+  {
+    "word": "der Apfel",
+    "translation": "apel",
+    "example": "Ich esse einen Apfel."
+  },
+  {
+    "word": "das Wasser",
+    "translation": "air",
+    "example": "Ich trinke Wasser."
+  },
+  {
+    "word": "das Haus",
+    "translation": "rumah",
+    "example": "Das Haus ist groß."
+  },
+  {
+    "word": "die Schule",
+    "translation": "sekolah",
+    "example": "Die Schule beginnt um 7 Uhr."
+  },
+  {
+    "word": "der Lehrer",
+    "translation": "guru",
+    "example": "Der Lehrer erklärt die Aufgabe."
+  },
+  {
+    "word": "die Zeit",
+    "translation": "waktu",
+    "example": "Ich habe keine Zeit."
+  },
+  {
+    "word": "der Tag",
+    "translation": "hari",
+    "example": "Heute ist ein schöner Tag."
+  }
+][
+  {
+    "word": "der Beruf",
+    "translation": "pekerjaan",
+    "example": "Mein Beruf ist Lehrer."
+  },
+  {
+    "word": "die Reise",
+    "translation": "perjalanan",
+    "example": "Die Reise war sehr schön."
+  },
+  {
+    "word": "das Auto",
+    "translation": "mobil",
+    "example": "Das Auto ist schnell."
+  },
+  {
+    "word": "der Bahnhof",
+    "translation": "stasiun",
+    "example": "Der Bahnhof ist hier."
+  },
+  {
+    "word": "die Arbeit",
+    "translation": "pekerjaan",
+    "example": "Ich gehe zur Arbeit."
+  },
+  {
+    "word": "der Urlaub",
+    "translation": "liburan",
+    "example": "Ich mache Urlaub in Bali."
+  },
+  {
+    "word": "das Ticket",
+    "translation": "tiket",
+    "example": "Ich kaufe ein Ticket."
+  },
+  {
+    "word": "die Rechnung",
+    "translation": "tagihan",
+    "example": "Die Rechnung ist teuer."
+  },
+  {
+    "word": "der Preis",
+    "translation": "harga",
+    "example": "Der Preis ist hoch."
+  },
+  {
+    "word": "die Liebe",
+    "translation": "cinta",
+    "example": "Liebe ist wichtig."
+  }
+][
+  {
+    "word": "die Erfahrung",
+    "translation": "pengalaman",
+    "example": "Ich habe viel Erfahrung."
+  },
+  {
+    "word": "die Meinung",
+    "translation": "pendapat",
+    "example": "Meiner Meinung nach ist das gut."
+  },
+  {
+    "word": "das Problem",
+    "translation": "masalah",
+    "example": "Das Problem ist schwierig."
+  },
+  {
+    "word": "die Lösung",
+    "translation": "solusi",
+    "example": "Die Lösung ist einfach."
+  },
+  {
+    "word": "die Umwelt",
+    "translation": "lingkungan",
+    "example": "Wir müssen die Umwelt schützen."
+  },
+  {
+    "word": "die Entwicklung",
+    "translation": "perkembangan",
+    "example": "Die Entwicklung ist schnell."
+  },
+  {
+    "word": "die Zukunft",
+    "translation": "masa depan",
+    "example": "Die Zukunft ist unklar."
+  },
+  {
+    "word": "das Wissen",
+    "translation": "pengetahuan",
+    "example": "Wissen ist wichtig."
+  },
+  {
+    "word": "die Bildung",
+    "translation": "pendidikan",
+    "example": "Bildung ist sehr wichtig."
+  },
+  {
+    "word": "die Gesellschaft",
+    "translation": "masyarakat",
+    "example": "Die Gesellschaft verändert sich."
+  }
+]
