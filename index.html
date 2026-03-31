@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar Bahasa Jerman</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f6f9;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
 
+<h1>🇩🇪 Belajar Vocabulary Jerman</h1>
+
+<div class="card">
+  <h2 id="word">Klik mulai</h2>
+  <p id="translation"></p>
+  <p id="example"></p>
+</div>
+
+<button onclick="nextWord()">Next</button>
+
+<script>
+const data = [
+  {word:"der Mann", translation:"laki-laki", example:"Der Mann ist freundlich."},
+  {word:"die Frau", translation:"perempuan", example:"Die Frau arbeitet im Büro."},
+  {word:"das Kind", translation:"anak", example:"Das Kind spielt im Garten."},
+  {word:"der Beruf", translation:"pekerjaan", example:"Mein Beruf ist Lehrer."},
+  {word:"die Reise", translation:"perjalanan", example:"Die Reise war sehr schön."},
+  {word:"die Erfahrung", translation:"pengalaman", example:"Ich habe viel Erfahrung."},
+  {word:"die Zukunft", translation:"masa depan", example:"Die Zukunft ist unklar."}
+];
+
+function nextWord(){
+  const random = data[Math.floor(Math.random() * data.length)];
+  document.getElementById("word").innerText = random.word;
+  document.getElementById("translation").innerText = random.translation;
+  document.getElementById("example").innerText = random.example;
+}
+</script>
+
+</body>
+</html>
